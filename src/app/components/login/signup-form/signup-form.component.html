@@ -1,0 +1,88 @@
+<form [formGroup]="inschrijfFormulier">
+
+  <ion-item-group>
+    <ion-item-divider color="light">
+      <ion-label><h1>Onderdeel</h1></ion-label>
+    </ion-item-divider>
+  
+    <ion-item color="light">
+      <ion-select formControlName="evenement" placeholder="Evenement">
+        <ion-select-option  value="Zuid">Zuid</ion-select-option >
+        <ion-select-option  value="Run">Run</ion-select-option >
+        <ion-select-option  value="Noord">Noord</ion-select-option >
+      </ion-select>
+    </ion-item>
+
+    <ion-item color="light">
+      <ion-select formControlName="onderdeel" placeholder="Onderdeel">
+        <ion-select-option  value="70km - Blauwe Route">70km - Blauwe Route</ion-select-option >
+        <ion-select-option  value="100km - Blauwe Route">100km - Blauwe Route</ion-select-option >
+        <ion-select-option  value="130km - Blauwe Route">130km - Blauwe Route</ion-select-option >
+      </ion-select>
+    </ion-item>
+
+  </ion-item-group>
+
+  <ion-item-group>
+    <ion-item-divider color="light">
+      <ion-label><h1>Deelnemer gegevens</h1></ion-label>
+    </ion-item-divider>
+  
+    <ion-item color="light">
+      <ion-input formControlName="voornaam" placeholder="Voornaam"></ion-input>
+    </ion-item>
+    <ion-item color="light">
+      <ion-input formControlName="tussenvoegsel" placeholder="Tussenvoegsel"></ion-input>
+    </ion-item>
+    <ion-item color="light">
+      <ion-input formControlName="achternaam" placeholder="Achternaam"></ion-input>
+    </ion-item>
+    <ion-item color="light">
+      <ion-input formControlName="adres" placeholder="Adres"></ion-input>
+    </ion-item>
+    <ion-item color="light">
+      <ion-input formControlName="postcode" placeholder="Postcode"></ion-input>
+    </ion-item>
+    <ion-item color="light">
+      <ion-input formControlName="woonplaats" placeholder="Woonplaats"></ion-input>
+    </ion-item>
+    <ion-item color="light">
+      <ion-input formControlName="land" placeholder="Land"></ion-input>
+    </ion-item>
+    <ion-item color="light">
+      <ion-datetime placeholder="Geboortedatum" formControlName="geboortedatum" display-format="DD/MM/YYYY" picker-format="MMMM YYYY"></ion-datetime>
+    </ion-item>
+    <ion-item color="light">
+      <ion-select formControlName="geslacht" placeholder="Geslacht">
+        <ion-select-option  value="v">Vrouw</ion-select-option >
+        <ion-select-option  value="m">Man</ion-select-option >
+        <ion-select-option  value="x">Anders</ion-select-option >
+      </ion-select>
+    </ion-item>
+    <ion-item color="light">
+      <ion-input formControlName="telefoonnummer" type="text" formControlName="telefoonnummer" placeholder="Telefoonnummer"></ion-input>
+    </ion-item>
+    <ion-item color="light">
+      <ion-input formControlName="email" placeholder="E-mail"></ion-input>
+    </ion-item>
+    <ion-item color="light">
+      <ion-label>Nieuwsbrief ontvangen</ion-label>
+      <ion-checkbox formControlName="nieuwsbrief"></ion-checkbox>
+    </ion-item>
+    <ion-item color="light">
+      <ion-label>Ik ga akkoord met alle voorwaarden</ion-label>
+      <ion-checkbox formControlName="voorwaarden"></ion-checkbox>
+    </ion-item>
+    <ion-grid>
+      <ion-row>
+        <ion-col></ion-col>
+      <ion-col>
+      <ion-button (click)="sendForm()">INSCHRIJVEN </ion-button>
+    </ion-col>
+    <ion-col></ion-col>
+  </ion-row>
+  </ion-grid>
+
+  </ion-item-group>
+
+</form>

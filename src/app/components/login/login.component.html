@@ -1,0 +1,12 @@
+
+
+<ion-card id="loginCard" color="dark">
+
+  <ion-card-header>
+    <ion-card-title>Welcome</ion-card-title>
+  </ion-card-header>
+  <app-login-form *ngIf="this.login.showLoginForm"></app-login-form>
+
+  <app-signup-form *ngIf="!this.login.showLoginForm"></app-signup-form>
+
+</ion-card>

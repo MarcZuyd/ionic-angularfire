@@ -14,7 +14,11 @@ const routes: Routes = [
   {
     path: 'list',
     loadChildren: './list/list.module#ListPageModule'
-  }
+  },
+  { path: 'login', loadChildren: './pages/login/login.module#LoginPageModule' },
+  { path: 'signup', loadChildren: './pages/signup/signup.module#SignupPageModule' },
+  { path: 'admin', loadChildren: './pages/admin/admin.module#AdminPageModule' },
+  { path: 'deelnemers', loadChildren: './pages/deelnemers/deelnemers.module#DeelnemersPageModule' }
 ];
 
 @NgModule({

@@ -1,0 +1,13 @@
+#form {
+    width: 500px;
+    margin: 1% auto;
+    
+}
+
+@media only screen and (max-width: 600px) {
+    #form {
+        width: 100%;
+        min-width: 200px;
+        padding: 5%;
+    }
+}

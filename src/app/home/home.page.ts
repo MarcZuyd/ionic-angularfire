@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FirebaseService } from '../services/firebase.service';
 
 @Component({
   selector: 'app-home',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  constructor(private afAuth: FirebaseService) { }
+
+  signOut() {
+    console.log('signout firebase');
+    this.afAuth.signOut();
+  }
 }
